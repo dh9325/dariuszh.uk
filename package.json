@@ -1,0 +1,23 @@
+{
+  "name": "dariuszh.uk",
+  "version": "0.1.0",
+  "description": "Home page",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dh9325/dariuszh.uk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dh9325/dariuszh.uk/issues"
+  },
+  "homepage": "https://github.com/dh9325/dariuszh.uk#readme"
+}

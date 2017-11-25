@@ -1,7 +1,7 @@
-var dhuk = dhuk || {}
+var dhuk = dhuk || {};
 
 dhuk.index = (function () {
-  var priv = {}
+  var priv = {};
   return {
     init: function () {
       window.onload = function () {
@@ -9,53 +9,49 @@ dhuk.index = (function () {
           // scroll to top when page refreshed
           window.scrollTo(0, 0);
 
-          // todo: remove
-          console.log('here');
-
           // set year
-          var now = new Date()
-          var elm = document.getElementsByClassName('year')
+          var now = new Date();
+          var elm = document.getElementsByClassName('year');
           if (elm && elm[0]) {
-            elm[0].textContent = now.getFullYear()
+            elm[0].textContent = now.getFullYear();
           }
-        }, 2)
-      }
+        }, 2);
+      };
       // add event listener for scroll and fix a navbar
       window.document.onscroll = function () {
-        var nav = document.getElementsByTagName('nav')
-        var div = document.getElementsByClassName('navbar')
-        var intro = document.getElementsByClassName('intro')
-        if (window.scrollY >= 200) {
+        var nav = document.getElementsByTagName('nav');
+        var div = document.getElementsByClassName('navbar');
+        var intro = document.getElementsByClassName('intro');
+        if (window.scrollY >= 425) {
           if (div && div[0]) {
-            var elm = div[0]
-            elm.setAttribute('class', 'navbar fixed')
+            var elm = div[0];
+            elm.setAttribute('class', 'navbar fixed');
           }
           if (nav && nav[0]) {
-            elm = nav[0]
-            elm.setAttribute('class', 'fixed')
+            elm = nav[0];
+            elm.setAttribute('class', 'fixed');
           }
           if (intro && intro[0]) {
-            elm = intro[0]
-            elm.setAttribute('style', 'display: none')
+            elm = intro[0];
+            elm.setAttribute('style', 'display: none');
           }
         } else {
           if (div && div[0]) {
-            elm = div[0]
-            elm.setAttribute('class', 'navbar nav-background')
+            elm = div[0];
+            elm.setAttribute('class', 'navbar nav-background');
           }
           if (nav && nav[0]) {
-            elm = nav[0]
-            elm.removeAttribute('class')
+            elm = nav[0];
+            elm.removeAttribute('class');
           }
           if (intro && intro[0]) {
-            elm = intro[0]
-            elm.removeAttribute('style')
+            elm = intro[0];
+            elm.removeAttribute('style');
           }
         }
-      }
-
+      };
     }
-  }
-})()
+  };
+})();
 
-dhuk.index.init()
+dhuk.index.init();

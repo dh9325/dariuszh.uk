@@ -4,11 +4,26 @@
   "description": "Home page",
   "main": "index.html",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "connect": "^3.6.5",
+    "connect-compiler": "^0.1.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-watch-less": "^1.0.1",
+    "html5-boilerplate": "^6.0.1",
+    "less-plugin-autoprefix": "^1.5.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:less": "gulp watch-less",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

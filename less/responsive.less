@@ -1,0 +1,29 @@
+.responsive-mobile-portrait(@rules) {
+  @media only screen and (max-width: 421px) {
+    @rules();
+  }
+}
+
+.responsive-mobile-landscape(@rules) {
+  @media only screen and (min-width: 422px) and (max-width: 735px) {
+    @rules();
+  }
+}
+
+.responsive-tablet(@rules) {
+  @media only screen and (min-width: 736px) and (max-width: 1024px) {
+    @rules();
+  }
+}
+
+.responsive-desktop(@rules){
+  @media only screen and (min-width: 1200px) {
+    @rules();
+  }
+}
+
+.response-non-desktop(@rules){
+  @media only screen and (max-width: 1199px) {
+    @rules();
+  }
+}

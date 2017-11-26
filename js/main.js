@@ -22,7 +22,7 @@ dhuk.index = (function () {
         var nav = document.getElementsByTagName('nav');
         var div = document.getElementsByClassName('navbar');
         var intro = document.getElementsByClassName('intro');
-        if (window.scrollY >= 425) {
+        if (window.scrollY >= 450) {
           if (div && div[0]) {
             var elm = div[0];
             elm.setAttribute('class', 'navbar fixed');
@@ -35,7 +35,7 @@ dhuk.index = (function () {
             elm = intro[0];
             elm.setAttribute('style', 'display: none');
           }
-        } else {
+        } else if (window.scrollY < 75) {
           if (div && div[0]) {
             elm = div[0];
             elm.setAttribute('class', 'navbar nav-background');
